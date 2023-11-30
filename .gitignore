@@ -62,3 +62,6 @@ crashlytics-build.properties
 .DS_Store
 .idea
 
+.vsconfig
+*.dwlt
+ProjectSettings/boot.config

@@ -1,5 +1,5 @@
-# FFmpeg4Unity
-Port of FFmpeg for unity based on FFmpeg.Autogen project
+# Unity.FFmpeg
+forked from https://github.com/hangarter/FFmpeg4Unity
 
 ## About this project
 This project has the goal for getting FFmpeg embedded into unity for as many devices as possible.
