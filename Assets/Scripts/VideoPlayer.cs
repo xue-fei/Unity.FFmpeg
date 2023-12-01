@@ -36,7 +36,7 @@ public class VideoPlayer : MonoBehaviour
         
         _backgroundTask = Task.Run(() =>
         {
-            var sourceFile = "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov";
+            var sourceFile = "rtmp://mobliestream.c3tv.com:554/live/goodtv.sdp";
             var frameIndex = 1000;
             _videoDecoder.Run(sourceFile, frameIndex);
         });
@@ -74,5 +74,13 @@ public class VideoPlayer : MonoBehaviour
     {
         _videoDecoder.Stop();
         // _backgroundTask.Wait();
+    }
+
+    private void OnApplicationQuit()
+    {
+        if(_backgroundTask != null)
+        {
+            _backgroundTask.Dispose();
+        }
     }
 }

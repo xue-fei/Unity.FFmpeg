@@ -65,3 +65,4 @@ crashlytics-build.properties
 .vsconfig
 *.dwlt
 ProjectSettings/boot.config
+ProjectSettings/SceneTemplateSettings.json
